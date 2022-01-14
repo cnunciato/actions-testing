@@ -20,7 +20,7 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.number }}
         run: |
-          echo "From Bash: ${PR_NUMBER}"
+          echo "From Bash: $PR_NUMBER"
           node -e "console.log('From Node:', process.env.PR_NUMBER);"
 
 #       - name: Commit artifacts
