@@ -3,5 +3,3 @@
 Pretty much what it says.
 
 Here is a change I would like to contribute.
-
-Here is another one. Yay.
