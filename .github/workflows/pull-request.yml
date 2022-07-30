@@ -10,14 +10,14 @@ jobs:
     steps:
       - name: Check perms
         id: perms
-        uses: cnunciato/check-repo-perms@v0.1
+        uses: cnunciato/check-repo-perms@v0.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
   run_pr_checks:
     name: Run all checks
     runs-on: self-hosted
     needs: check_perms
-    if: ${{ needs.check_perms.outputs.perms == 'admin' }}
+    if: ${{ needs.check_perms.outputs.permission == 'admin' }}
     steps:
       - name: Do a thing
         run: |
