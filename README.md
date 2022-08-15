@@ -1,3 +1,3 @@
-# actions-testing yay
+# actions-testing
 
 Pretty much what it says.
